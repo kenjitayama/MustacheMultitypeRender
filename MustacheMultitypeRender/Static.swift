@@ -14,7 +14,7 @@ import Foundation
 struct Static {
     
     /// regular expression for tokenizing placeholder parts of a template
-    static let mustacheRegex: NSRegularExpression = {
+    static let placeholderRegex: NSRegularExpression = {
         return try! NSRegularExpression(pattern: "\\{\\{(.+?)\\}\\}", options: [])
     }()
     

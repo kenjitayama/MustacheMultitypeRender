@@ -53,17 +53,17 @@ extension Template {
         var offset = self.templateString.startIndex
         var renderingTokens = [RenderingToken]()
         
-        let mustacheTokens = self.getMustacheRenderingTokens()
+        let placeholderToken = self.getPlaceholderRenderingTokens()
         
-        for mToken in mustacheTokens {
+        for placeholderToken in placeholderToken {
             
-            if mToken.originalRange.startIndex != offset {
+            if placeholderToken.originalRange.startIndex != offset {
 
-                // offset is behind the mustache token
+                // offset is behind the placeholder token
 
                 let range = Range<String.Index>(
                     start: offset,
-                    end: mToken.originalRange.startIndex
+                    end: placeholderToken.originalRange.startIndex
                 )
                 let token = RenderingToken(
                     kind: .Text,
@@ -73,11 +73,11 @@ extension Template {
                 renderingTokens.append(token)
             }
             
-            renderingTokens.append(mToken)
-            offset = mToken.originalRange.endIndex
+            renderingTokens.append(placeholderToken)
+            offset = placeholderToken.originalRange.endIndex
         }
         
-        // after the last mustache token (or maybe no mustache tokens)
+        // after the last placeholder token (or maybe no placeholder tokens)
         if offset < self.templateString.endIndex {
             let range = Range<String.Index>(
                 start: offset,
@@ -106,12 +106,12 @@ extension Template {
      - RenderingToken
 
      */
-    private func getMustacheRenderingTokens() -> [RenderingToken] {
+    private func getPlaceholderRenderingTokens() -> [RenderingToken] {
         
         let input = self.templateString
         var tokens = [RenderingToken]()
         
-        Static.mustacheRegex.enumerateMatchesInString(
+        Static.placeholderRegex.enumerateMatchesInString(
             input,
             options: [],
             range: NSMakeRange(0, (input as NSString).length)) { (match, _, _) -> Void in

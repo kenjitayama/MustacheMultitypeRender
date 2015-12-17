@@ -83,11 +83,11 @@
 		7C2691661C22CF8400E5251E /* MustacheMultitypeRender */ = {
 			isa = PBXGroup;
 			children = (
-				7C94437C1C22D04A00659D6B /* RenderingToken.swift */,
-				7C94437D1C22D04A00659D6B /* Static.swift */,
 				7C94437E1C22D04A00659D6B /* Template.swift */,
 				7C94437F1C22D04A00659D6B /* TemplateAttributedStringRender.swift */,
 				7C9443801C22D04A00659D6B /* TemplateStringRender.swift */,
+				7C94437C1C22D04A00659D6B /* RenderingToken.swift */,
+				7C94437D1C22D04A00659D6B /* Static.swift */,
 				7C2691671C22CF8400E5251E /* MustacheMultitypeRender.h */,
 				7C2691691C22CF8400E5251E /* Info.plist */,
 			);
