@@ -48,7 +48,7 @@ public final class TemplateStringRender: Template {
      
      - returns: rendered result
      */
-    func renderToken(token: RenderingToken, data: [String: String]) -> RenderResult {
+    private func renderToken(token: RenderingToken, data: [String: String]) -> RenderResult {
         
         switch token.kind {
             
