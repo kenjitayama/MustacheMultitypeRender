@@ -24,6 +24,44 @@ class MustacheMultitypeRenderTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        let filters: [String: TemplateStringRender.Filter] = [
+            "distance": { (args: [String]) in
+                return "Distance of \(args[0]) and \(args[1]) is far"
+            }
+        ]
+        let implicitFilter = { (renderSource: String) in
+            return "[\(renderSource)]"
+        }
+        
+        
+        
+        var template = TemplateStringRender(
+            templateString: "aaa {{apple}} {{candy}} {{distance(city1,city2)}}, {{distance(city3,city4)}} bbb",
+            filters: filters,
+            implicitFilter: implicitFilter)
+        
+        var renderResult = template.render([
+            "apple": "cherry",
+            "city1": "Tokyo",
+            "city2": "New York"
+            ])
+        print(renderResult)
+        
+        template = TemplateStringRender(
+            templateString: "🍏🍎 {{apple}} {{candy}} {{distance(city1,city2)}},🍜🍲 {{distance(city3,city4)}} 🍔bbb",
+            filters: filters,
+            implicitFilter: implicitFilter)
+        renderResult = template.render([
+            "apple": "cherry",
+            "city1": "Tokyo",
+            "city2": "New York"
+            ])
+        
+        print(renderResult)
+        
+        XCTAssertNotNil(renderResult)
+        
     }
     
     func testPerformanceExample() {

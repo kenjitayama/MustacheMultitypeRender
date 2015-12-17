@@ -10,6 +10,11 @@
 		7C2691681C22CF8400E5251E /* MustacheMultitypeRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2691671C22CF8400E5251E /* MustacheMultitypeRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C26916F1C22CF8400E5251E /* MustacheMultitypeRender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C2691641C22CF8400E5251E /* MustacheMultitypeRender.framework */; };
 		7C2691741C22CF8400E5251E /* MustacheMultitypeRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2691731C22CF8400E5251E /* MustacheMultitypeRenderTests.swift */; };
+		7C9443811C22D04A00659D6B /* RenderingToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94437C1C22D04A00659D6B /* RenderingToken.swift */; };
+		7C9443821C22D04A00659D6B /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94437D1C22D04A00659D6B /* Static.swift */; };
+		7C9443831C22D04A00659D6B /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94437E1C22D04A00659D6B /* Template.swift */; };
+		7C9443841C22D04A00659D6B /* TemplateAttributedStringRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94437F1C22D04A00659D6B /* TemplateAttributedStringRender.swift */; };
+		7C9443851C22D04A00659D6B /* TemplateStringRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9443801C22D04A00659D6B /* TemplateStringRender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,12 @@
 		7C26916E1C22CF8400E5251E /* MustacheMultitypeRenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustacheMultitypeRenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2691731C22CF8400E5251E /* MustacheMultitypeRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheMultitypeRenderTests.swift; sourceTree = "<group>"; };
 		7C2691751C22CF8400E5251E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C94437C1C22D04A00659D6B /* RenderingToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderingToken.swift; sourceTree = "<group>"; };
+		7C94437D1C22D04A00659D6B /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
+		7C94437E1C22D04A00659D6B /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		7C94437F1C22D04A00659D6B /* TemplateAttributedStringRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateAttributedStringRender.swift; sourceTree = "<group>"; };
+		7C9443801C22D04A00659D6B /* TemplateStringRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateStringRender.swift; sourceTree = "<group>"; };
+		7C9443881C22D10600659D6B /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 		7C26915A1C22CF8400E5251E = {
 			isa = PBXGroup;
 			children = (
+				7C9443881C22D10600659D6B /* Playground.playground */,
 				7C2691661C22CF8400E5251E /* MustacheMultitypeRender */,
 				7C2691721C22CF8400E5251E /* MustacheMultitypeRenderTests */,
 				7C2691651C22CF8400E5251E /* Products */,
@@ -71,6 +83,11 @@
 		7C2691661C22CF8400E5251E /* MustacheMultitypeRender */ = {
 			isa = PBXGroup;
 			children = (
+				7C94437C1C22D04A00659D6B /* RenderingToken.swift */,
+				7C94437D1C22D04A00659D6B /* Static.swift */,
+				7C94437E1C22D04A00659D6B /* Template.swift */,
+				7C94437F1C22D04A00659D6B /* TemplateAttributedStringRender.swift */,
+				7C9443801C22D04A00659D6B /* TemplateStringRender.swift */,
 				7C2691671C22CF8400E5251E /* MustacheMultitypeRender.h */,
 				7C2691691C22CF8400E5251E /* Info.plist */,
 			);
@@ -194,6 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9443831C22D04A00659D6B /* Template.swift in Sources */,
+				7C9443811C22D04A00659D6B /* RenderingToken.swift in Sources */,
+				7C9443841C22D04A00659D6B /* TemplateAttributedStringRender.swift in Sources */,
+				7C9443821C22D04A00659D6B /* Static.swift in Sources */,
+				7C9443851C22D04A00659D6B /* TemplateStringRender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +330,7 @@
 		7C2691791C22CF8400E5251E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +341,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenjitayama.MustacheMultitypeRender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7C26917A1C22CF8400E5251E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +401,7 @@
 				7C26917A1C22CF8400E5251E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C26917B1C22CF8400E5251E /* Build configuration list for PBXNativeTarget "MustacheMultitypeRenderTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +410,7 @@
 				7C26917D1C22CF8400E5251E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
