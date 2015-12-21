@@ -26,18 +26,18 @@ class MustacheMultitypeRenderTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
 
         let filters: [String: TemplateStringRender.Filter] = [
-            "distance": { (args: [String]) in
-                return "Distance of \(args[0]) and \(args[1]) is far"
+            "flyingTo": { (args: [String]) in
+                return "\(args[0]) 🛫🛬 \(args[1])"
             }
         ]
         let implicitFilter = { (renderSource: String) in
             return "[\(renderSource)]"
         }
         
-        
-        
+        // start/end with non-placeholder
+        // 1 valid replacemnt, 1 missing replacement
         var template = TemplateStringRender(
-            templateString: "aaa {{apple}} {{candy}} {{distance(city1,city2)}}, {{distance(city3,city4)}} bbb",
+            templateString: "start {{apple}} {{candy}} {{flyingTo(city1,city2)}} end",
             filters: filters,
             implicitFilter: implicitFilter)
         
@@ -46,29 +46,35 @@ class MustacheMultitypeRenderTests: XCTestCase {
             "city1": "Tokyo",
             "city2": "New York"
             ])
-        print(renderResult)
+        XCTAssertEqual(renderResult, "[start ][cherry][ ][candy][ ]Tokyo 🛫🛬 New York[ end]")
         
+        
+        // start/end with placeholder,
+        // 1 valid replacemnt, 1 missing replacement
+        // 1 missing filter argument (2 needed)
         template = TemplateStringRender(
-            templateString: "🍏🍎 {{apple}} {{candy}} {{distance(city1,city2)}},🍜🍲 {{distance(city3,city4)}} 🍔bbb",
+            templateString: "{{apple}} {{candy}} {{flyingTo(city1,city2)}}, {{flyingTo(city1,city3)}}",
             filters: filters,
             implicitFilter: implicitFilter)
         renderResult = template.render([
             "apple": "cherry",
             "city1": "Tokyo",
-            "city2": "New York"
             ])
+        XCTAssertEqual(renderResult, "[cherry][ ][candy][ ]Tokyo 🛫🛬 city2[, ]Tokyo 🛫🛬 city3")
         
-        print(renderResult)
+        // start with placeholder,
+        // 1 valid replacemnt, 1 missing replacement
+        // 2 missing filter argument (2 needed)
+        template = TemplateStringRender(
+            templateString: "[start ][cherry][ ][mentos][ ][distance(city1,city2)][, ]city1 🛫🛬 city3",
+            filters: filters,
+            implicitFilter: implicitFilter)
+        renderResult = template.render([
+            "apple": "cherry",
+            "candy": "mentos"
+            ])
+        XCTAssertEqual(renderResult, "[[start ][cherry][ ][mentos][ ][distance(city1,city2)][, ]city1 🛫🛬 city3]")
         
-        XCTAssertNotNil(renderResult)
-        
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
     }
     
 }
