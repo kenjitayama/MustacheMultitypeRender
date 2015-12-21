@@ -29,7 +29,7 @@ protocol Template {
      
      - returns: rendered result
      */
-    func render(data: [String: String]) -> RenderResult
+    func render(data: [String: String]?) -> RenderResult
     
     /// template string to be rendered
     var templateString: String { get }

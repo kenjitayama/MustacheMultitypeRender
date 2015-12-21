@@ -17,9 +17,9 @@ public final class TemplateAttributedStringRender: Template {
     public typealias Filter = (args: [String]) -> RenderResult
     public typealias ImplicitFilter = (renderSource: String) -> RenderResult
     
-    public func render(data: [String: String]) -> RenderResult {
+    public func render(data: [String: String]? = nil) -> RenderResult {
         let renderedTokens = self.getRenderingTokens().map { (token) -> RenderResult in
-            return self.renderToken(token, data: data)
+            return self.renderToken(token, data: data ?? [String: String]())
         }
         
         let attributedString = NSMutableAttributedString()
