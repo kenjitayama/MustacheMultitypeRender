@@ -1,8 +1,5 @@
 # MustacheMultitypeRender
 
-
-## About
-
 Render Mustache templates to any type. String and NSAttributedString rendering comes out of the box.
 
 
