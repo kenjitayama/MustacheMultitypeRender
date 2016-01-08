@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "MustacheMultitypeRender"
   s.version          = "0.1.0"
-  s.summary          = "Render Mustache templates to any type. String and NSAttributedString rendering comes out of the box."
+  s.summary          = "Render Mustache templates to any type."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
