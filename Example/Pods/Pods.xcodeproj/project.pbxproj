@@ -10,7 +10,11 @@
 		13651128ED2EA13356CD43583F600F08 /* Pods-MustacheMultitypeRender_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD5FA2018D5FA4DF7E8CC26B2E447B /* Pods-MustacheMultitypeRender_Tests-dummy.m */; };
 		1E85AC186D6F084B03035F72E2D65CC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		2E428810372B875D66ADF7E06161D55F /* MustacheMultitypeRender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9651939C6870FE310A6D5D4E9037822F /* MustacheMultitypeRender.bundle */; };
-		7AB6FB835C69B0E0D37303C58A6E3899 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC2F8B38EA4937F4B57A8A5250A317 /* ReplaceMe.swift */; };
+		7C6151FE1C3F80990071DA7E /* RenderingToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6151F91C3F80990071DA7E /* RenderingToken.swift */; };
+		7C6151FF1C3F80990071DA7E /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6151FA1C3F80990071DA7E /* Static.swift */; };
+		7C6152001C3F80990071DA7E /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6151FB1C3F80990071DA7E /* Template.swift */; };
+		7C6152011C3F80990071DA7E /* TemplateAttributedStringRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6151FC1C3F80990071DA7E /* TemplateAttributedStringRender.swift */; };
+		7C6152021C3F80990071DA7E /* TemplateStringRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6151FD1C3F80990071DA7E /* TemplateStringRender.swift */; };
 		A4E06301D707CBF6A32232D9FFAC404F /* MustacheMultitypeRender-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CB00BD1D5E75566A8B733088F7CB4D /* MustacheMultitypeRender-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBE489E80BCBE38BEB14D08AEC316353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		D974F82E751DD18865E9020B153CDC1F /* Pods-MustacheMultitypeRender_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D213DEC9753D77AB42C0CFE5CCA810A /* Pods-MustacheMultitypeRender_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,13 +52,17 @@
 		6BBD5FA2018D5FA4DF7E8CC26B2E447B /* Pods-MustacheMultitypeRender_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MustacheMultitypeRender_Tests-dummy.m"; sourceTree = "<group>"; };
 		6C7CA4D6FC2B41AD5017595F4BC2F44A /* Pods-MustacheMultitypeRender_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MustacheMultitypeRender_Tests.modulemap"; sourceTree = "<group>"; };
 		7943A70B0282677CF31D08C106AF365C /* Pods-MustacheMultitypeRender_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MustacheMultitypeRender_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C6151F91C3F80990071DA7E /* RenderingToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderingToken.swift; sourceTree = "<group>"; };
+		7C6151FA1C3F80990071DA7E /* Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
+		7C6151FB1C3F80990071DA7E /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		7C6151FC1C3F80990071DA7E /* TemplateAttributedStringRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateAttributedStringRender.swift; sourceTree = "<group>"; };
+		7C6151FD1C3F80990071DA7E /* TemplateStringRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateStringRender.swift; sourceTree = "<group>"; };
 		8EBB31FD968C89463496F48E41E4952A /* MustacheMultitypeRender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MustacheMultitypeRender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9651939C6870FE310A6D5D4E9037822F /* MustacheMultitypeRender.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustacheMultitypeRender.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8E923BBB2888014C20E2F8F8AEF35BF /* Pods-MustacheMultitypeRender_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MustacheMultitypeRender_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C9523AB9CF841692EAD5BB339DC663CC /* MustacheMultitypeRender-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MustacheMultitypeRender-prefix.pch"; sourceTree = "<group>"; };
 		D030E223B30F99E363EF7F75AC6B05A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8DC2F8B38EA4937F4B57A8A5250A317 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		F5BE5C3F01EFE4D283B0645D503EAB1F /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MustacheMultitypeRender_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE42A9D29CA4282AF7F8D22059F12AB2 /* MustacheMultitypeRender.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MustacheMultitypeRender.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +143,11 @@
 		6F3294DC28AD7285752DE3E398B64F44 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D8DC2F8B38EA4937F4B57A8A5250A317 /* ReplaceMe.swift */,
+				7C6151F91C3F80990071DA7E /* RenderingToken.swift */,
+				7C6151FA1C3F80990071DA7E /* Static.swift */,
+				7C6151FB1C3F80990071DA7E /* Template.swift */,
+				7C6151FC1C3F80990071DA7E /* TemplateAttributedStringRender.swift */,
+				7C6151FD1C3F80990071DA7E /* TemplateStringRender.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -331,8 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6152001C3F80990071DA7E /* Template.swift in Sources */,
+				7C6151FE1C3F80990071DA7E /* RenderingToken.swift in Sources */,
+				7C6152011C3F80990071DA7E /* TemplateAttributedStringRender.swift in Sources */,
 				E25419BFC34530D8809F1B37FCF5CCB7 /* MustacheMultitypeRender-dummy.m in Sources */,
-				7AB6FB835C69B0E0D37303C58A6E3899 /* ReplaceMe.swift in Sources */,
+				7C6152021C3F80990071DA7E /* TemplateStringRender.swift in Sources */,
+				7C6151FF1C3F80990071DA7E /* Static.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
