@@ -1,6 +1,6 @@
 # MustacheMultitypeRender
 
-[![CI Status](http://img.shields.io/travis/Kenji%20Tayama/MustacheMultitypeRender.svg?style=flat)](https://travis-ci.org/Kenji Tayama/MustacheMultitypeRender)
+[![CI Status](http://img.shields.io/travis/Kenji%20Tayama/MustacheMultitypeRender.svg?style=flat)](https://travis-ci.org/Kenji%20Tayama/MustacheMultitypeRender)
 [![Version](https://img.shields.io/cocoapods/v/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 [![License](https://img.shields.io/cocoapods/l/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 [![Platform](https://img.shields.io/cocoapods/p/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
