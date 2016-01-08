@@ -18,6 +18,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62BAB37AD1487B9C1154E9E1 /* Pods_MustacheMultitypeRender_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustacheMultitypeRender_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6152031C3F82310071DA7E /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		C42DAA8AD5F1399DCA64BCE7 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF49A130BBFB5302592C4F5D /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F55F2C038CC7F67F3F13B5F2 /* MustacheMultitypeRender.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MustacheMultitypeRender.podspec; path = ../MustacheMultitypeRender.podspec; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				7C6152031C3F82310071DA7E /* Playground.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
