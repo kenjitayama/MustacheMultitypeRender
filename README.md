@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 [![Platform](https://img.shields.io/cocoapods/p/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 
+Render Mustache templates to any type. String and NSAttributedString rendering comes out of the box.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
