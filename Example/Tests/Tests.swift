@@ -1,15 +1,8 @@
-//
-//  MustacheMultitypeRenderTests.swift
-//  MustacheMultitypeRenderTests
-//
-//  Created by Kenji Tayama on 12/17/15.
-//  Copyright © 2015 Kenji Tayama. All rights reserved.
-//
-
+import UIKit
 import XCTest
-@testable import MustacheMultitypeRender
+import MustacheMultitypeRender
 
-class MustacheMultitypeRenderTests: XCTestCase {
+class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -24,7 +17,7 @@ class MustacheMultitypeRenderTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-
+        
         let filters: [String: TemplateStringRender.Filter] = [
             "flyingTo": { (args: [String]) in
                 return "\(args[0]) 🛫🛬 \(args[1])"
@@ -74,7 +67,13 @@ class MustacheMultitypeRenderTests: XCTestCase {
             "candy": "mentos"
             ])
         XCTAssertEqual(renderResult, "[[start ][cherry][ ][mentos][ ][distance(city1,city2)][, ]city1 🛫🛬 city3]")
-        
+    }
+    
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measureBlock() {
+            // Put the code you want to measure the time of here.
+        }
     }
     
 }

@@ -1,0 +1,14 @@
+PODS:
+  - MustacheMultitypeRender (0.1.0)
+
+DEPENDENCIES:
+  - MustacheMultitypeRender (from `../`)
+
+EXTERNAL SOURCES:
+  MustacheMultitypeRender:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MustacheMultitypeRender: 6719774b40aeb6f53e9d7e8b0fd366a84ab49811
+
+COCOAPODS: 0.39.0

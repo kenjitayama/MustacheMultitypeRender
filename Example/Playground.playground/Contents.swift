@@ -24,12 +24,12 @@ let implicitFilter: TemplateAttributedStringRender.ImplicitFilter = { (renderSou
 }
 
 var template = TemplateAttributedStringRender(
-    templateString: "Lets get {{boldBig(emotion)}} with {{fruit}}",
+    templateString: "Lets eat a {{boldBig(adjetive)}} {{fruit}}",
     filters: filters,
     implicitFilter: implicitFilter)
 
 let attrStr = template.render([
-    "emotion": "happy",
+    "adjetive": "tasty",
     "fruit": "apple"
     ])
 
