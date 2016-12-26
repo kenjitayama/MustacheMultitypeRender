@@ -14,13 +14,13 @@ import Foundation
 protocol Template {
 
     /// generic type alias for render result
-    typealias RenderResult
+    associatedtype RenderResult
     
     /// type alias for filter function, indicated to use inside placeholders
-    typealias Filter = (args: [String]) -> RenderResult // TODO: variadic parameters
+    associatedtype Filter = (_ args: [String]) -> RenderResult // TODO: variadic parameters
     
     /// type alias for implicit filter function, for text not in placeholders
-    typealias ImplicitFilter = (renderSource: String) -> RenderResult
+    associatedtype ImplicitFilter = (_ renderSource: String) -> RenderResult
     
     /**
      Renders the template, applying `data` to the placeholders(or arguments of filters inside them).
@@ -29,7 +29,7 @@ protocol Template {
      
      - returns: rendered result
      */
-    func render(data: [String: String]?) -> RenderResult
+    func render(_ data: [String: String]?) -> RenderResult
     
     /// template string to be rendered
     var templateString: String { get }
@@ -57,36 +57,30 @@ extension Template {
         
         for placeholderToken in placeholderToken {
             
-            if placeholderToken.originalRange.startIndex != offset {
+            if placeholderToken.originalRange.lowerBound != offset {
 
                 // offset is behind the placeholder token
 
-                let range = Range<String.Index>(
-                    start: offset,
-                    end: placeholderToken.originalRange.startIndex
-                )
+                let range = (offset ..< placeholderToken.originalRange.lowerBound)
                 let token = RenderingToken(
-                    kind: .Text,
+                    kind: .text,
                     originalRange: range,
-                    renderSource: self.templateString.substringWithRange(range)
+                    renderSource: self.templateString.substring(with: range)
                 )
                 renderingTokens.append(token)
             }
             
             renderingTokens.append(placeholderToken)
-            offset = placeholderToken.originalRange.endIndex
+            offset = placeholderToken.originalRange.upperBound
         }
         
         // after the last placeholder token (or maybe no placeholder tokens)
         if offset < self.templateString.endIndex {
-            let range = Range<String.Index>(
-                start: offset,
-                end: self.templateString.endIndex
-            )
+            let range = (offset ..< self.templateString.endIndex)
             let token = RenderingToken(
-                kind: .Text,
+                kind: .text,
                 originalRange: range,
-                renderSource: self.templateString.substringWithRange(range)
+                renderSource: self.templateString.substring(with: range)
             )
             renderingTokens.append(token)
             offset = self.templateString.endIndex
@@ -111,8 +105,8 @@ extension Template {
         let input = self.templateString
         var tokens = [RenderingToken]()
         
-        Static.placeholderRegex.enumerateMatchesInString(
-            input,
+        Static.placeholderRegex.enumerateMatches(
+            in: input,
             options: [],
             range: NSMakeRange(0, (input as NSString).length)) { (match, _, _) -> Void in
                 
@@ -120,15 +114,15 @@ extension Template {
                     return
                 }
                 
-                guard let matchRange = Static.rangeFromNSRange(match.range, forString: input),
-                    let contentRange = Static.rangeFromNSRange(match.rangeAtIndex(1), forString: input) else {
+                guard let matchRange = input.range(from: match.range),
+                    let contentRange = input.range(from: match.rangeAt(1)) else {
                         return
                 }
                 
-                let contentString = input.substringWithRange(contentRange)
+                let contentString = input.substring(with: contentRange)
                 
                 let token = RenderingToken(
-                    kind: .Placeholder,
+                    kind: .placeholder,
                     originalRange: matchRange,
                     renderSource: contentString
                 )

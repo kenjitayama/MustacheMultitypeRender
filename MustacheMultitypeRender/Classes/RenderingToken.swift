@@ -18,8 +18,8 @@ final class RenderingToken {
      - Text:        non-placeholder part of the temlpate
      */
     enum Kind {
-        case Placeholder
-        case Text
+        case placeholder
+        case text
     }
     
     /// type of this token
@@ -53,14 +53,14 @@ final class RenderingToken {
         self.renderSource = renderSource
 
 
-        guard kind == .Placeholder else {
+        guard kind == .placeholder else {
             self.filterName = nil
             self.filterArgs = nil
             return
         }
         
-        let matches = Static.filterRegex.matchesInString(
-            renderSource,
+        let matches = Static.filterRegex.matches(
+            in: renderSource,
             options: [],
             range: NSMakeRange(0, (renderSource as NSString).length))
         
@@ -71,18 +71,18 @@ final class RenderingToken {
             return
         }
         
-        guard let filterNameRange = Static.rangeFromNSRange(match.rangeAtIndex(1), forString: renderSource),
-            let filterArgsStrRange = Static.rangeFromNSRange(match.rangeAtIndex(2), forString: renderSource) else {
+        guard let filterNameRange = renderSource.range(from: match.rangeAt(1)),
+            let filterArgsStrRange = renderSource.range(from: match.rangeAt(2)) else {
                 self.filterName = nil
                 self.filterArgs = nil
                 return
         }
         
-        self.filterName = renderSource.substringWithRange(filterNameRange)
+        self.filterName = renderSource.substring(with: filterNameRange)
         
-        let filterArgsStr = renderSource.substringWithRange(filterArgsStrRange)
-        let separatorSet = NSCharacterSet(charactersInString: ", ")
-        self.filterArgs = (filterArgsStr as NSString).componentsSeparatedByCharactersInSet(separatorSet)
+        let filterArgsStr = renderSource.substring(with: filterArgsStrRange)
+        let separatorSet = CharacterSet(charactersIn: ", ")
+        self.filterArgs = (filterArgsStr as NSString).components(separatedBy: separatorSet)
     }
     
 }

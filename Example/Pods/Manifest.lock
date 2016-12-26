@@ -6,9 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   MustacheMultitypeRender:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  MustacheMultitypeRender: 6719774b40aeb6f53e9d7e8b0fd366a84ab49811
+  MustacheMultitypeRender: 05e3f8d4c0cca46c2cb92b2b121c8506c57439be
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 89ebc8fdce8bc95ac7c90f0e8e78ee17163d50ab
+
+COCOAPODS: 1.1.1

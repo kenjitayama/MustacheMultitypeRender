@@ -14,10 +14,10 @@ public final class TemplateAttributedStringRender: Template {
     // MARK: Public
     
     public typealias RenderResult = NSAttributedString
-    public typealias Filter = (args: [String]) -> RenderResult
-    public typealias ImplicitFilter = (renderSource: String) -> RenderResult
+    public typealias Filter = (_ args: [String]) -> RenderResult
+    public typealias ImplicitFilter = (_ renderSource: String) -> RenderResult
     
-    public func render(data: [String: String]? = nil) -> RenderResult {
+    public func render(_ data: [String: String]? = nil) -> RenderResult {
         let renderedTokens = self.getRenderingTokens().map { (token) -> RenderResult in
             return self.renderToken(token, data: data ?? [String: String]())
         }
@@ -25,7 +25,7 @@ public final class TemplateAttributedStringRender: Template {
         let attributedString = NSMutableAttributedString()
         
         for renderedToken in renderedTokens {
-            attributedString.appendAttributedString(renderedToken)
+            attributedString.append(renderedToken)
         }
        
         return NSAttributedString(attributedString: attributedString)
@@ -52,11 +52,11 @@ public final class TemplateAttributedStringRender: Template {
      
      - returns: rendered result
      */
-    private func renderToken(token: RenderingToken, data: [String: String]) -> RenderResult {
+    private func renderToken(_ token: RenderingToken, data: [String: String]) -> RenderResult {
         
         switch token.kind {
             
-        case .Placeholder:
+        case .placeholder:
             
             if let filterName = token.filterName,
                 let filter = self.filters[filterName] {
@@ -67,22 +67,22 @@ public final class TemplateAttributedStringRender: Template {
                             replacedFilterArgs.append(data[arg] ?? arg)
                         }
                     }
-                    return filter(args: replacedFilterArgs)
+                    return filter(replacedFilterArgs)
             }
             
             let renderSource = data[token.renderSource] ?? token.renderSource
             if let filter = self.implicitFilter {
-                return filter(renderSource: renderSource)
+                return filter(renderSource)
             }
             return NSAttributedString(string: renderSource)
             
-        case .Text:
+        case .text:
             
             fallthrough
         default:
             
             if let filter = self.implicitFilter {
-                return filter(renderSource: token.renderSource)
+                return filter(token.renderSource)
             }
             return NSAttributedString(string: token.renderSource)
         }

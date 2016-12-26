@@ -2,9 +2,12 @@
   "name": "MustacheMultitypeRender",
   "version": "0.1.0",
   "summary": "A short description of MustacheMultitypeRender.",
-  "description": "",
+  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/<GITHUB_USERNAME>/MustacheMultitypeRender",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Kenji Tayama": "kenji.tayama@gmail.com"
   },
@@ -15,11 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "MustacheMultitypeRender": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "MustacheMultitypeRender/Classes/**/*"
 }

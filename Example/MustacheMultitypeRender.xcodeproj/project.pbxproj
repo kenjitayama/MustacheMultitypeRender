@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7EB5CF35EFEB7564050D6C3B /* Pods_MustacheMultitypeRender_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BAB37AD1487B9C1154E9E1 /* Pods_MustacheMultitypeRender_Tests.framework */; };
+		692F5DF2C5B89B09E6D12459 /* Pods_MustacheMultitypeRender_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1226060B9F83FCEA09CDB6 /* Pods_MustacheMultitypeRender_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DCEB91188E87A1A5E1D9EB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5FE5BEE0E097886A15F67A32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2193A63AF757F44F6A7E3FD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		23A87CB7DF6073A1D2BE5B46 /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		378C0E2DFD80901A0E807AE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MustacheMultitypeRender_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustacheMultitypeRender_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		62BAB37AD1487B9C1154E9E1 /* Pods_MustacheMultitypeRender_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustacheMultitypeRender_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C6152031C3F82310071DA7E /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
-		C42DAA8AD5F1399DCA64BCE7 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF49A130BBFB5302592C4F5D /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F55F2C038CC7F67F3F13B5F2 /* MustacheMultitypeRender.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MustacheMultitypeRender.podspec; path = ../MustacheMultitypeRender.podspec; sourceTree = "<group>"; };
+		6E5DC59C69E8F1F87F6C230C /* MustacheMultitypeRender.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MustacheMultitypeRender.podspec; path = ../MustacheMultitypeRender.podspec; sourceTree = "<group>"; };
+		8925266ADCD7CF98FC1420E4 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1226060B9F83FCEA09CDB6 /* Pods_MustacheMultitypeRender_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustacheMultitypeRender_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,39 +28,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EB5CF35EFEB7564050D6C3B /* Pods_MustacheMultitypeRender_Tests.framework in Frameworks */,
+				692F5DF2C5B89B09E6D12459 /* Pods_MustacheMultitypeRender_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08E3598F0F8E8AE242734330 /* Pods */ = {
+		23D14A82C6CE3FC267A14BBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C42DAA8AD5F1399DCA64BCE7 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */,
-				DF49A130BBFB5302592C4F5D /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */,
+				8925266ADCD7CF98FC1420E4 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */,
+				23A87CB7DF6073A1D2BE5B46 /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		2081558ED0AC31BBC0B02B48 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				62BAB37AD1487B9C1154E9E1 /* Pods_MustacheMultitypeRender_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				7C6152031C3F82310071DA7E /* Playground.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				08E3598F0F8E8AE242734330 /* Pods */,
-				2081558ED0AC31BBC0B02B48 /* Frameworks */,
+				23D14A82C6CE3FC267A14BBD /* Pods */,
+				DC827ED0EA1001F8AAA8BA26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,11 +83,19 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				F55F2C038CC7F67F3F13B5F2 /* MustacheMultitypeRender.podspec */,
-				5FE5BEE0E097886A15F67A32 /* README.md */,
-				5DCEB91188E87A1A5E1D9EB9 /* LICENSE */,
+				6E5DC59C69E8F1F87F6C230C /* MustacheMultitypeRender.podspec */,
+				2193A63AF757F44F6A7E3FD9 /* README.md */,
+				378C0E2DFD80901A0E807AE5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		DC827ED0EA1001F8AAA8BA26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1226060B9F83FCEA09CDB6 /* Pods_MustacheMultitypeRender_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MustacheMultitypeRender_Tests" */;
 			buildPhases = (
-				AC54503D105DCF7D15914084 /* Check Pods Manifest.lock */,
+				F10C73C5FECAAEBAACC3D886 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				A24F575E31B88E872951518F /* Embed Pods Frameworks */,
-				871C678BE9EA899E5715C0D7 /* Copy Pods Resources */,
+				26AD53EF764B2C334A79E026 /* [CP] Embed Pods Frameworks */,
+				9FC8A7CB8625BC2A3D2A409F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +128,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TBYUQ5N9W7;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -168,29 +168,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		871C678BE9EA899E5715C0D7 /* Copy Pods Resources */ = {
+		26AD53EF764B2C334A79E026 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A24F575E31B88E872951518F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,19 +183,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC54503D105DCF7D15914084 /* Check Pods Manifest.lock */ = {
+		9FC8A7CB8625BC2A3D2A409F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10C73C5FECAAEBAACC3D886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -240,8 +240,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -285,8 +287,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -305,18 +309,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C42DAA8AD5F1399DCA64BCE7 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */;
+			baseConfigurationReference = 8925266ADCD7CF98FC1420E4 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TBYUQ5N9W7;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -325,23 +329,22 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MustacheMultitypeRender_Example.app/MustacheMultitypeRender_Example";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF49A130BBFB5302592C4F5D /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */;
+			baseConfigurationReference = 23A87CB7DF6073A1D2BE5B46 /* Pods-MustacheMultitypeRender_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TBYUQ5N9W7;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MustacheMultitypeRender_Example.app/MustacheMultitypeRender_Example";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

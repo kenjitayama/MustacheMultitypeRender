@@ -1,13 +1,11 @@
 # MustacheMultitypeRender
 
-[![CI Status](http://img.shields.io/travis/kenjitayama/MustacheMultitypeRender.svg?style=flat)](https://travis-ci.org/kenjitayama/MustacheMultitypeRender)
+[![CI Status](http://img.shields.io/travis/Kenji Tayama/MustacheMultitypeRender.svg?style=flat)](https://travis-ci.org/Kenji Tayama/MustacheMultitypeRender)
 [![Version](https://img.shields.io/cocoapods/v/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 [![License](https://img.shields.io/cocoapods/l/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 [![Platform](https://img.shields.io/cocoapods/p/MustacheMultitypeRender.svg?style=flat)](http://cocoapods.org/pods/MustacheMultitypeRender)
 
-Render Mustache templates to any type. String and NSAttributedString rendering comes out of the box.
-
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
