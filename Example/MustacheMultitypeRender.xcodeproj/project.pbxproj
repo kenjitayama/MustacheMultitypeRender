@@ -20,6 +20,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E5DC59C69E8F1F87F6C230C /* MustacheMultitypeRender.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MustacheMultitypeRender.podspec; path = ../MustacheMultitypeRender.podspec; sourceTree = "<group>"; };
 		8925266ADCD7CF98FC1420E4 /* Pods-MustacheMultitypeRender_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MustacheMultitypeRender_Tests/Pods-MustacheMultitypeRender_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5672B51E113CC4006A9354 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		EE1226060B9F83FCEA09CDB6 /* Pods_MustacheMultitypeRender_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustacheMultitypeRender_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,6 +48,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				BA5672B51E113CC4006A9354 /* Playground.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
