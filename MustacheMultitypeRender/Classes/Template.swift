@@ -115,7 +115,7 @@ extension Template {
                 }
                 
                 guard let matchRange = input.range(from: match.range),
-                    let contentRange = input.range(from: match.rangeAt(1)) else {
+                  let contentRange = input.range(from: match.range(at: 1)) else {
                         return
                 }
                 

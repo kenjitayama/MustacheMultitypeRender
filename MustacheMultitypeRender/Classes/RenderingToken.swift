@@ -71,8 +71,8 @@ final class RenderingToken {
             return
         }
         
-        guard let filterNameRange = renderSource.range(from: match.rangeAt(1)),
-            let filterArgsStrRange = renderSource.range(from: match.rangeAt(2)) else {
+      guard let filterNameRange = renderSource.range(from: match.range(at: 1)),
+        let filterArgsStrRange = renderSource.range(from: match.range(at: 2)) else {
                 self.filterName = nil
                 self.filterArgs = nil
                 return
